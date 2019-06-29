@@ -1,6 +1,37 @@
 
-* {
-  outline: 1px solid white;
+body * {
+  outline: 1px solid red;
 }
-header {
+
+.big-div{
+  height: 200vh;
+  background-color: forestgreen;
+}
+
+.pos-fixed{
+  height: 50px;
+  width: 100%;
+  background-color: burlywood;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.pos-absolute {
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.block{
+  height: 100px;
+}
+.pos-relative{
+  background-color: aqua;
+  margin-top: 50px;
+  position: relative;
+  top: 20px;
+  right: 20px;
 }
