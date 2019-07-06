@@ -10,7 +10,7 @@
     
 }
 
-.dropdown-label{
+.menu{
     background: darkgrey;
     padding: 1em 1em;
     cursor: pointer;
@@ -24,7 +24,7 @@
 
 .dropdown:hover .dropdown-menu{
     display: block;
-    padding: 0,8em;
+    // padding: 0,8em;
 }
 
 .lisub{
@@ -46,4 +46,30 @@
     padding: 1px solid black;
     color: azure;
     text-decoration: none;
+}
+
+.contact{
+    background: darkgrey;
+    position: relative;
+    padding: 1em 1em;
+}
+
+.contact > a{
+    text-decoration:none;
+}
+
+.about{
+    background: darkgrey;
+    position: relative;
+    padding: 1em 1em;
+}
+
+.dropdown-about{
+    display: none;
+    position: absolute;
+    background: grey;
+}
+
+.dropdown:hover .dropdown-about{
+    display: block;
 }
