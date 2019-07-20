@@ -1,114 +1,50 @@
-.container{
-    width: 100%;
-    // max-width: 1080px;
-    background: mediumpurple;
+body *{
+    outline: 1px solid red;
+}
+html, body{
+    height: 100% ;
+}
+.container {
+    height: 100%;
+}
+ .block1, .block2{
+    width: 200px;
+    height: 100%;
+    float: left;
+ }
+.block1 {
+    background: green;
+    float: left;
 }
 
-.dropdown{
-    position: relative;
-    display: inline-block;
-    
+.block2 {
+    background: blue;
+    float: right;
 }
 
-.menu{
-    background: darkgrey;
-    padding: 1em 1em;
-    cursor: pointer;
-}
-
-.dropdown-menu{
-    display: none;
-    position: absolute;
-    background: grey;
-}
-
-.dropdown:hover .dropdown-menu{
+.header::before {
+    content: "befor";
+    height: 30px;
     display: block;
-    // padding: 0,8em;
+    outline: 1px solid red;
+    background: blue;
 }
 
-.lisub{
-    list-style-type: none;
-    color: aqua;
-    width: 100px;
-    padding-left: 0;
-    margin: 0;
-    text-align: center;
-    border: 1px solid black;
-}
-
-<<<<<<< HEAD
-body * {
-  outline: 1px solid red;
-}
-
-.big-div{
-  height: 200vh;
-  background-color: forestgreen;
-}
-
-.pos-fixed{
-  height: 50px;
-  width: 100%;
-  background-color: burlywood;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.pos-absolute {
-  background-color: blue;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.block{
-  height: 100px;
-}
-.pos-relative{
-  background-color: aqua;
-  margin-top: 50px;
-  position: relative;
-  top: 20px;
-  right: 20px;
-}
-=======
-.lisub > li + li {
-    border: 1px solid black;
-}
-
-.lisub > li > a{
+.header::after {
+    content: "after";
+    height: 30px;
     display: block;
-    padding: 1px solid black;
-    color: azure;
-    text-decoration: none;
+    outline: 1px solid red;
+    background: red;
 }
 
-.contact{
-    background: darkgrey;
-    position: relative;
-    padding: 1em 1em;
-}
-
-.contact > a{
-    text-decoration:none;
-}
-
-.about{
-    background: darkgrey;
-    position: relative;
-    padding: 1em 1em;
-}
-
-.dropdown-about{
-    display: none;
-    position: absolute;
-    background: grey;
-}
-
-.dropdown:hover .dropdown-about{
+.clearfix::after{
+    content: "";
+    clear: both;
     display: block;
 }
->>>>>>> 0678e226d0cf825e28e5ea2156cf5b01c285c0fd
+
+.main{
+    background-color: orange;
+    max-width: 100%;
+}
