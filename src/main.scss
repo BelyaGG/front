@@ -1,4 +1,43 @@
+.container{
+    width: 100%;
+    // max-width: 1080px;
+    background: mediumpurple;
+}
 
+.dropdown{
+    position: relative;
+    display: inline-block;
+    
+}
+
+.menu{
+    background: darkgrey;
+    padding: 1em 1em;
+    cursor: pointer;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background: grey;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    // padding: 0,8em;
+}
+
+.lisub{
+    list-style-type: none;
+    color: aqua;
+    width: 100px;
+    padding-left: 0;
+    margin: 0;
+    text-align: center;
+    border: 1px solid black;
+}
+
+<<<<<<< HEAD
 body * {
   outline: 1px solid red;
 }
@@ -35,3 +74,41 @@ body * {
   top: 20px;
   right: 20px;
 }
+=======
+.lisub > li + li {
+    border: 1px solid black;
+}
+
+.lisub > li > a{
+    display: block;
+    padding: 1px solid black;
+    color: azure;
+    text-decoration: none;
+}
+
+.contact{
+    background: darkgrey;
+    position: relative;
+    padding: 1em 1em;
+}
+
+.contact > a{
+    text-decoration:none;
+}
+
+.about{
+    background: darkgrey;
+    position: relative;
+    padding: 1em 1em;
+}
+
+.dropdown-about{
+    display: none;
+    position: absolute;
+    background: grey;
+}
+
+.dropdown:hover .dropdown-about{
+    display: block;
+}
+>>>>>>> 0678e226d0cf825e28e5ea2156cf5b01c285c0fd
