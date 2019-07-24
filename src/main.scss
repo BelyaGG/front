@@ -1,8 +1,19 @@
-body *{
+@import "./partials/card/card.scss";
+
+@font-face{
+    src: url();
+    font-family: "BlaBla";
+}
+
+body * {
     outline: 1px solid red;
 }
+
 html, body{
     height: 100% ;
+    padding: 0;
+    margin: 0;
+    font-family: "BlaBla";
 }
 .container {
     height: 100%;
@@ -47,4 +58,8 @@ html, body{
 .main{
     background-color: orange;
     max-width: 100%;
+}
+
+.cards{
+    display: flex;
 }

@@ -14,6 +14,10 @@
       <div class="block2"></div>
       <div class="main">main</div>
     </div>
+    <div class="cards">
+      @@include('./partials/card/card.html', {"cardName": "first card"})
+      @@include('./partials/card/card.html', {"cardName": "second card", "color":"green"})
+    </div>
     <div class="footer">footer</div>
   </body>
 </html>
