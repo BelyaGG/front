@@ -8,16 +8,39 @@
     <title>It academy</title>
   </head>
   <body>
-    <div class="header">Header</div>
-    <div class="container clearfix">
-      <div class="block1"></div>
-      <div class="block2"></div>
-      <div class="main">main</div>
-    </div>
-    <div class="cards">
-      @@include('./partials/card/card.html', {"cardName": "first card"})
-      @@include('./partials/card/card.html', {"cardName": "second card", "color":"green"})
-    </div>
-    <div class="footer">footer</div>
+    <header>
+      <div class="contener">
+        <div class="page-logo">
+            <img class="logo" src="img/rabbit-logo.png" alt="logo">
+            <h1>orange </br><span>RABBIT</span></h1>
+        </div>
+        <div class="menu">
+          <nav>
+            <ul class="menu-list">
+              <li>
+                <a href="#">home</a>
+              </li>
+              <li>
+                <a href="#">about</a>
+              </li>
+              <li>
+                <a href="#">work</a>
+              </li>
+              <li>
+                <a href="#">blog</a>
+              </li>
+              <li>
+                <a href="#">contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="hed">
+        <img src="img/big-orange-bg.png">
+      </div>
+    </header>
+
+
   </body>
 </html>
