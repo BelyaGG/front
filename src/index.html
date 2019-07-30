@@ -8,16 +8,115 @@
     <title>It academy</title>
   </head>
   <body>
-    <div class="header">Header</div>
-    <div class="container clearfix">
-      <div class="block1"></div>
-      <div class="block2"></div>
-      <div class="main">main</div>
+    <div class="contener">
+      <div class="header">
+        <div class="logo">
+          <div class="logo_img">
+            <img src="img/rabbit-logo.png" alt="">
+          </div>
+          <div class="logo_text">
+            <h1 class="orange_text">orange </br>
+            <span class="rabbit_text">RABBIT</span></h1>
+          </div>
+        </div>
+        <div class="menu">
+          <nav>
+            <ul>
+              <li><a href="#">home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">work</a></li>
+              <li><a href="#">blog</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
-    <div class="cards">
-      @@include('./partials/card/card.html', {"cardName": "first card"})
-      @@include('./partials/card/card.html', {"cardName": "second card", "color":"green"})
+    <div class="slaider">
+      <div class="font">
+        <img src="img/big-orange-bg.png" alt="">
+      </div>
+      <div class="slaider_text">
+        <div class="firstblock">
+          <p class="firstblock_black">DO YOU LIKE RABBIT?</p>
+        </div>
+        <div class="secondblock">
+          <p class="secondblock_orange">DO YOU LIKE ORANGE?</p>
+        </div>
+      </div>
     </div>
-    <div class="footer">footer</div>
+    <div class="contener">
+      <div class="desc">
+        <p class="desc_p">Praesent ut ligula non mi varius sagittis. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Maecenas malesuada.</p>
+        <a href="#">read more...</a>
+      </div>
+      <div class="desc">
+        <p class="desc_p">Praesent ut ligula non mi varius sagittis. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Maecenas malesuada.</p>
+        <a href="#">read more...</a>
+      </div>
+      <div class="desc">
+        <p class="desc_p">Praesent ut ligula non mi varius sagittis. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Maecenas malesuada.</p>
+        <a href="#">read more...</a>
+      </div>
+      <div class="desc">
+        <p class="desc_p">Praesent ut ligula non mi varius sagittis. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Maecenas malesuada.</p>
+        <a href="#">read more...</a>
+      </div>
+    </div>
+    <hr>
+    <div class="contener">
+      <div class="main_text">
+        <h1>Meet the team</h1>
+      </div>
+      <div class="three-column">
+        <div class="three-column__item">
+            @@include('./partials/user-card/_user-card.html', {
+            "userName": "Hoof",             
+            "userPosition": "Lead Designer",
+            "pathUserImg": "/img/horse.jpg",
+            "userDescription": "Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Sed lectus. Phasellus dolor.        Duis vel nibh at velit scelerisque suscipit. Sed lectus. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci."
+          })
+        </div>
+        <div class="three-column__item">
+            @@include('./partials/user-card/_user-card.html', {
+            "userName": "Nibs",
+            "userPosition": "CEO/Director",
+            "pathUserImg": "./img/rabbit.jpg",
+            "userDescription": "Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Sed lectus. Phasellus dolor.        Duis vel nibh at velit scelerisque suscipit. Sed lectus. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci."
+          })
+        </div>
+        <div class="three-column__item">
+            @@include('./partials/user-card/_user-card.html', {
+            "userName": "Squawk",
+            "userPosition": "Developer",
+            "pathUserImg": "./img/straus.jpg",
+            "userDescription": "Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Sed lectus. Phasellus dolor.        Duis vel nibh at velit scelerisque suscipit. Sed lectus. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci."
+          })
+         </div>
+      </div>
+      <div class="text_send">
+        <h1>Send us a message...</h1>
+      </div>
+      <div class="input">
+        <div class="input_name">
+          <span>Name:</span>
+          <input type="text">
+        </div>
+        <div class="input_email">
+          <span>Email:</span>
+          <input type="email">
+        </div>
+        <div class="input_message">
+          <span>Message:</span>
+          <input type="text">
+        </div>
+      </div>
+      <div class="button">
+        <button>Submit</button>
+      </div>
+    </div>  
+    <div class="footer">
+        <h1>COPYRIGHT ORANGE RABBIT - DESIGNED BY JAKE BHATT</h1>
+    </div>
   </body>
 </html>
