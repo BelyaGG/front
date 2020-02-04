@@ -1,11 +1,10 @@
+import { mainDOM } from './dom/mainDOM.js';
 import {isUserRegistered} from './utils/isUserRegistered.js'
 
-const div = document.getElementsByClassName('myclass');
 
 export const addFormSubmitEvent = () => {
     const form = document.forms[0];
     form.addEventListener("submit", function(e){
-        console.log(form)
         e.preventDefault()
         const [inputEmail, inputPassword, checkbox] = form.elements;
 
@@ -17,9 +16,14 @@ export const addFormSubmitEvent = () => {
                 registeredEmail === inputEmail.value && 
                 registeredPassword === inputPassword.value
             ) {
-                console.log ("Успешно вошли");
+                alert ("Успешно вошли");
+                document.querySelector('.form-signin').style.display = 'none';
+                mainDOM();
             } else {
-                console.log('Неверный пароль или логин')
+                const notification = document.querySelector('#notification');
+                notification.innerHTML = 'Не верный логин или пароль';
+                notification.style.color = 'red';
+                console.log('ffff')
             }
 
 
@@ -30,7 +34,8 @@ export const addFormSubmitEvent = () => {
             if (checkbox.checked){
                 localStorage.setItem("isValidationRequired", false);
             }
-            console.log ( 'ПОЗДРАВЛЯЕМ! ВЫ УСПЕШНО ЗАРЕГИСТРИРОВАНЫ В СИСТЕМЕ!') ;
+            alert ( 'ПОЗДРАВЛЯЕМ! ВЫ УСПЕШНО ЗАРЕГИСТРИРОВАНЫ В СИСТЕМЕ!') ;
+            mainDOM();
         }
     });
 };

@@ -37,7 +37,7 @@ export const createForm = () => {
         <label>
             <input type="checkbox" value="remember-me"> Remember me
         </label>
-        <div class="myclass"> </div>
+        <div id="notification"> </div>
     `
 
     const button = document.createElement('button');
